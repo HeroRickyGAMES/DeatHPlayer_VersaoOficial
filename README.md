@@ -1,4 +1,4 @@
-#DeatcH Player V2
+# DeatcH Player V2
 
 <h2>Deseja um aplicativo simples de musica que cumpre sua missão de apenas reproduzir musicas?</h2>
 <h2>SIM! O DeatcH Player é o ideal para isso!</h2>
