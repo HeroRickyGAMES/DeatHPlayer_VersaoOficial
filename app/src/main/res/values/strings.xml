@@ -1,0 +1,326 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">DeatcH Player</string>
+    <string name="queue">Fila</string>
+    <string name="library">Biblioteca</string>
+    <string name="hello_blank_fragment">Olá blank fragment</string>
+    <string name="start_marker">Inicar marcador</string>
+    <string name="end_marker">Encerrar Marcador</string>
+    <string name="rewind">Presente</string>
+    <string name="play">Reproduzir</string>
+    <string name="stop">Parar</string>
+    <string name="ffwd">Reproduzir rapidamente para frente</string>
+    <string name="start_label">Inicio:</string>
+    <string name="end_label">Fim:</string>
+    <string name="progress_dialog_loading">Carregando...</string>
+    <string name="time_seconds">segundos</string>
+    <string name="hint_choose_song_by_random">Reproduzir aleatoriamente pela sua biblioteca</string>
+    <string name="song_piece_header">Sons</string>
+    <string name="title_playlist_suggest">Recentes</string>
+    <string name="hint_playlist_suggested">Você pode amar essas músicas</string>
+    <string name="main_screen_album_header">Albuns</string>
+    <string name="hint_playlist_showing">Reproduizir todas as musicas desse albums</string>
+    <string name="app_title">Musica</string>
+    <string name="title_activity_slider">Controle deslizante</string>
+    <string name="navigation_drawer_open">Abra a gaveta de navegações</string>
+    <string name="navigation_drawer_close">Feche a gaveta de notificações</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Configuração</string>
+    <string name="trade_mark">Musica ®</string>
+    <string name="count_song"><xliff:g id="count">%d</xliff:g> som</string>
+    <string name="count_songs"><xliff:g id="count">%d</xliff:g> sons</string>
+    <string name="count_album"><xliff:g id="count">%d</xliff:g> album</string>
+    <string name="count_albums"><xliff:g id="count">%d</xliff:g> albuns</string>
+    <string name="count_artist"><xliff:g id="count">%d</xliff:g> artista</string>
+    <string name="count_artists"><xliff:g id="count">%d</xliff:g> artistas</string>
+    <string name="number_song_add_queue"><xliff:g example="1" id="number">%d</xliff:g> Esse som foi adicionado na fila.</string>
+    <string name="number_songs_add_queue"><xliff:g example="1" id="number">%d</xliff:g> Esses sons foi adicionado na fila.</string>
+    <string name="number_song_add_playlist"><xliff:g example="1" id="number">%d</xliff:g> Esse som foi adicionado na playlist.</string>
+    <string name="number_songs_add_playlist"><xliff:g example="1" id="number">%d</xliff:g> Esse soms foram adicionados playlist.</string>
+    <string name="combine_two_strings" translatable="false">%1$s | %2$s</string>
+    <string name="duration_format" translatable="false"><xliff:g id="hours">%1$s</xliff:g> <xliff:g id="minutes">%2$s</xliff:g></string>
+    <string name="durationformatshort" translatable="false"><xliff:g id="format">%2$d:%3$02d</xliff:g></string>
+    <string name="durationformatlong" translatable="false"><xliff:g id="format">%1$d:%2$02d:%3$02d</xliff:g></string>
+    <string name="playlist_last_added">Ultimos Adicionados</string>
+    <string name="playlist_recently_played">Adicionados recentemente</string>
+    <string name="playlist_top_tracks">Minhas top Tracks</string>
+    <string name="this_is_name_of_the_song">Este é o nome da música</string>
+    <string name="the_name_of_the_song">O nome da canção</string>
+    <string name="the_artist_of_the_song">O Artista da Canção</string>
+    <string name="this_is_artist_of_the_song">Este é o Artista da Canção</string>
+    <string name="error_playing_track">Erro ao reproduzir musica</string>
+    <string name="no_equalizer">O equalizador não foi encontrado!.</string>
+    <string name="no_audio_ID">"Reproduza uma música primeiro e tente novamente."</string>
+    <string name="accessibility_play">Reproduzir</string>
+    <string name="accessibility_pause">Pausar</string>
+    <string name="accessibility_next">Proximo</string>
+    <string name="accessibility_prev">Anterior</string>
+    <string name="accessibility_shuffle">Embaralhar</string>
+    <string name="accessibility_shuffle_all">Embaralhar tudo</string>
+    <string name="accessibility_repeat">Repetir</string>
+    <string name="accessibility_repeat_all">Repetir tudo</string>
+    <string name="accessibility_repeat_one">Repetir uma</string>
+    <string name="accessibility_queue">Abrir fila</string>
+    <string name="accessibility_browse">Procurar musica</string>
+
+    <string name="menu_sort_by">Ordenar por</string>
+    <string name="sort_order_entry_az">A-Z</string>
+    <string name="sort_order_entry_za">Z-A</string>
+    <string name="sort_order_entry_artist">Artista</string>
+    <string name="sort_order_entry_album">Album</string>
+    <string name="sort_order_entry_year">Year</string>
+    <string name="sort_order_entry_track_number">Numero da musica</string>
+    <string name="sort_order_entry_duration">Duração</string>
+    <string name="sort_order_entry_date_added">Data adicionado</string>
+    <string name="sort_order_entry_track_list">Tracklist</string>
+    <string name="sort_order_entry_number_of_songs">Numero de musicas</string>
+    <string name="sort_order_entry_number_of_albums">Numero de Albuns</string>
+    <string name="sort_order_entry_filename">Filename</string>
+    <string name="saved_playlist_to">Lista de reprodução salva em %s.</string>
+    <string name="failed_to_save_playlist">Falha ao salvar a lista de reprodução (%s).</string>
+    <string name="saved_x_playlists_to_x">Salvo %1$d playlists para %2$s.</string>
+
+    <string name="timber_source">Report os bugs <u> aqui </u> </string>
+    <string name="timber_feature_request">Especifique qualquer solicitação de recurso no meu email <u> aqui </u></string>
+    <string name="dialog_ringtone_title">Ajustar toque</string>
+    <string name="dialog_ringtone_message">Permitir que o app modifique as configurações de áudio</string>
+    <string name="menu_show_as">Visualizar como</string>
+    <string name="menu_show_as_entry_list">Lista</string>
+    <string name="menu_show_as_entry_grid">Grade</string>
+    <string name="menu_show_as_entry_default">Padrão</string>
+
+    <string name="light">Claro</string>
+    <string name="dark">Escuro</string>
+    <string name="black">Escuro-Verdadeiro (AMOLED)</string>
+
+    <string name="last_opened">Ultimas abertas</string>
+
+    <string name="songs">Musicas</string>
+    <string name="albums">Albuns</string>
+    <string name="artists">Artistas</string>
+    <string name="playlists">Playlists</string>
+    <string name="playing_queue">Reproduzindo Fila</string>
+    <string name="now_playing">Agora está tocando</string>
+    <string name="settings">Configurações</string>
+    <string name="about">Sobre</string>
+    <string name="help_and_feedback">Ajuda e feedback</string>
+    <string name="search">Procura</string>
+    <string name="action_shuffle_all">Embaralhar tudo</string>
+    <string name="action_equalizer">Equalizador</string>
+    <string name="search_library">Biblioteca de pesquisa</string>
+
+    <string name="select_theme">Selecionar o tema</string>
+    <string name="choose_theme_throughout">Escolha um tema para ser usado em todo o aplicativo.</string>
+    <string name="choose_start_page">Escolha a página inicial a ser exibida no inicio do app.</string>
+    <string name="start_page">Pagina inicial</string>
+    <string name="artist_in_grid">Artistas na grade</string>
+    <string name="toggle_artists_grid">Alternar para exibir artistas em uma grade 2x2.</string>
+    <string name="toggle_system_animations">Alterne para animações do sistema em todo o aplicativo.</string>
+    <string name="system_animations">Animações do sistema</string>
+    <string name="toggle_animations">Alternar para animação de transição em todo o aplicativo.</string>
+    <string name="animations">Animações</string>
+    <string name="now_playing_selector">Escolha uma tela em reprodução de 4 estilos diferentes.</string>
+    <string name="personalisation">Personalização</string>
+    <string name="other">Outro</string>
+    <string name="advanced">Avançado</string>
+    <string name="timber_about_opensource">O DeatcH Player é um reprodutor de música de código aberto desenvolvido por HeroRickyGames com codigos reaproveitados de alguns apps de musica para facilitar o entendimento e estudo meu sobre a Plataforma Android! O app tem codigos reaproveitados do app Timber desenvolvido por Naman Dwivedi. Obrigado!</string>
+    <string name="summary_pause_detach">Alterne para pausar a reprodução quando o fone de ouvido é desconectado</string>
+    <string name="pause_detach">Pausar ao separar</string>
+    <string name="summary_xposed_trackselector">Requer a instalação do módulo Xposed e XMediaNotificationTrackSelector Xposed. Isso fornecerá acesso à fila de reprodução na própria barra de notificação.</string>
+    <string name="xposed_trackselector">Tocando suporte a fila na notificação</string>
+    <string name="currently_selected">Atualmente selecionado</string>
+
+    <string name="dark_theme">Tema escuro</string>
+    <string name="dark_theme_summary">Aplica um tema escuro no aplicativo</string>
+
+    <string name="primary_color">Cor Primaria</string>
+    <string name="primary_color_summary">Mude a cor primaria</string>
+
+    <string name="accent_color">Cor Ascendente</string>
+    <string name="accent_color_summary">Mude a cor Ascendente</string>
+
+    <string name="colored_status_bar">Cor da Barra de Status</string>
+    <string name="colored_status_bar_summary">Alternar a coloração da barra de status</string>
+
+    <string name="colored_nav_bar">Coloração da Barra de Navegação</string>
+    <string name="colored_nav_bar_summary">Alternar a coloração da barra de navegação</string>
+
+    <string name="albumart_lockscreen">Tela de bloqueio</string>
+    <string name="albumart_lockscreen_summary">Mostrar a arte do álbum na tela de bloqueio. (Desativar é opcional, algumas ROMS, ou sistemas de fabricante não suportam essa opção)</string>
+
+    <string name="load_artist_image">Carregar imagens do artista</string>
+    <string name="load_artist_image_summary">Carregar imagens de artistas do lastfm</string>
+
+    <string name="load_artist_image_mobile">Carregar imagens de artistas em dados móveis</string>
+    <string name="load_artist_image_mobile_summary">Carregue imagens de artistas mesmo se não houver wifi</string>
+
+    <string name="gestures">Gestures</string>
+    <string name="switching_tracks_by_gestures">Alternando faixas usando gestos</string>
+    <string name="widget_standard">Widget padrão do aplicativo</string>
+    <string name="widget_small">Widget pequeno do aplicativo</string>
+    <string name="tap_to_start">Toque para iniciar o DeatcH Player</string>
+    <string name="widget_white">Widget de light do aplicativo</string>
+
+
+    <string name="add_to_playlist">Adicionar a fila</string>
+    <string name="go_to_album">Ir ao album</string>
+    <string name="go_to_artist">Ir ao artista</string>
+    <string name="add_to_queue">Adicionar a fila</string>
+    <string name="play_next">Reproduzir próxima</string>
+    <string name="new_playlist">Nova Playlist</string>
+
+
+    <string name="nothing_found">Nada fiu encontrado!</string>
+    <string name="folders">Pastas</string>
+    <string name="select_storage">Selecionar Armazenamento</string>
+
+    <string name="lastfm_pref">Faça login no LastFM para fazer scrobble</string>
+    <string name="lastfm_login_failture">Falha ao fazer o login!</string>
+    <string name="lastfm_login">Login no LastFM</string>
+    <string name="lastfm_loged_in">Logado como %s</string>
+
+    <string name="cancel">Cancelar</string>
+
+    <!-- Bottom Sheet -->
+    <string name="bottom_sheet_option_camera">Usar a Camera</string>
+    <string name="bottom_sheet_option_gallery">Mandar pela galeria</string>
+    <string name="bottom_sheet_option_heading">Adicionar foto</string>
+    <string name="bottom_sheet_option_remove_photo">Remover foto</string>
+    <string name="delete_from_playlist">Deletar da playlist</string>
+    <string name="delete_from_device">Deletar do dispositivo</string>
+    <string name="share">Compartilhar</string>
+    <string name="see_all">Ver todas</string>
+    <string name="play_random">Reprodução aleatória</string>
+    <string name="play_all_songs">Reproduzir todas</string>
+    <string name="title_activity_main3">Main3Activity</string>
+    <string name="splash">Splash</string>
+    <string name="feature">Biblioteca Principal</string>
+    <string name="more">Mais</string>
+    <string name="search_string">Procurar</string>
+    <string name="genres">Generos</string>
+    <string name="random_play">Reprodução aleatória</string>
+    <string name="sort">Encurtar</string>
+    <string name="playlist">Playlist</string>
+    <string name="middle_dot" translatable="false">•</string>
+    <string name="see_all_songs">Ver todas as músicas</string>
+    <string name="x_has_been_set_as_ringtone">Definir que %1$s é o seu toque.</string>
+    <string name="favorites">Favoritas</string>
+    <string name="sort_by_name_asc">Procurar por titulo</string>
+    <string name="sort_by_name_desc">Procurar por titulo (Desc)</string>
+    <string name="sort_by_time_asc">Procurar por data adicionada</string>
+    <string name="sort_by_time_desc">Procurar por data adicionada (Desc)</string>
+    <string name="sort_by_favor_asc">Procurar por favoritas (Asc)</string>
+    <string name="sort_by_favor_desc">Procurar por favoritas (Desc)</string>
+    <string name="favorite">Favorita</string>
+    <string name="time_added">Data adicionada</string>
+    <string name="title">Titulo</string>
+
+    <!--- Phonograph String Resources -->
+    <string name="today">Hoje</string>
+    <string name="this_week">Essa semana</string>
+    <string name="past_seven_days">A mais ou menos de 7 dias</string>
+    <string name="this_month">Nesse mês</string>
+    <string name="past_three_months">A mais ou menos 3 meses</string>
+    <string name="this_year">Nesse ano</string>
+    <string name="not_recently_played">Não reproduziu recentemente</string>
+    <string name="unplayable_file">Não foi possivel \u2019t reproduzir essa musica.</string>
+    <string name="history">Tocado recentemente</string>
+    <string name="playlist_is_empty">Playlist está vazia</string>
+    <string name="playing_notification_description">A notificação de reprodução fornece ações para reproduzir/pausar etc.</string>
+    <string name="playing_notification_name">Reproduzindo notificação</string>
+    <string name="audio_focus_denied">Foco de áudio negado.</string>
+    <string name="added_title_to_playing_queue">"Adicionado 1 título à fila de audio."</string>
+    <string name="added_x_titles_to_playing_queue">Adicionado %1$d títulos para a fila de reprodução.</string>
+    <string name="action_play_next">Reproduzir proxima</string>
+    <string name="action_play">Reproduzir</string>
+    <string name="action_play_pause">Play/Pause</string>
+    <string name="action_previous">Anterior</string>
+    <string name="action_next">Proximo</string>
+    <string name="app_widget_big_name">Musicr - Grande</string>
+    <string name="app_widget_classic_name">Musicr - Classico</string>
+    <string name="app_widget_small_name">Musicr - Pequeno</string>
+    <string name="app_widget_card_name">Musicr - Cartão</string>
+    <string name="alert_ext">Pressione mais uma vez para sair</string>
+    <string name="copy">Copiar</string>
+    <string name="edit">Editar</string>
+    <string name="save">Savar</string>
+    <string name="saved_x_playlists_to_x_failed_to_save_x">Listas de reprodução de %1$d salvas em %2$s, falha ao salvar %3$d.</string>
+    <string name="not_listed_in_media_store"><![CDATA[<b>%s</b> não está listado na loja de mídia.]]></string>
+    <string name="some_files_are_not_listed_in_the_media_store">Alguns arquivos não estão listados no armazenamento de mídia.</string>
+    <string name="nothing_to_scan">Nada para escanear.</string>
+    <string name="scanned_files">Escaneado %1$d de %2$d arquivos.</string>
+    <string name="could_not_scan_files">Não foi possivel escanear %d arquivos.</string>
+    <string name="saving_changes">Salvando mudanças</string>
+    <string name="created_playlist_x">Lista de reprodução criada %1$s.</string>
+    <string name="playlist_exists">Playlist %1$s já existe.</string>
+    <string name="could_not_create_playlist">Não foi possivel\u2019 criar playlist.</string>
+    <string name="delete_playlist_x"><![CDATA[Deletar playlist <b>%1$s</b>?]]></string>
+    <string name="clear_playlist_x"><![CDATA[Limpar a playlist <b>%1$s</b>? isso não pode ser desfeito!]]></string>
+    <string name="inserted_x_songs_into_playlist_x">Insira %1$d musicas dentro da playlist %2$s.</string>
+    <string name="delete_x_playlists"><![CDATA[Deletar <b>%1$d</b> playlists?]]></string>
+    <string name="grant_permission_order_description">DeatcH Player ® precisa do acesso ao Armazenamento para acessar as musicas. sem isso, o apicativo não será capaz de reproduzir suas musicas.</string>
+    <string name="access_external_storage">Acesso ao Armazenamento Externo</string>
+    <string name="allow_access">Permitir Acesso</string>
+    <string name="fill_this_field_by_lyric">Preencha este campo por letra</string>
+    <string name="save_as">Salvar como</string>
+    <string name="unknown_genres">Generos desconhecidos</string>
+    <string name="lyric">Lyric</string>
+    <string name="all_songs">Todas as musicas</string>
+    <string name="play_in">Tocar em</string>
+    <string name="unknown_playlist">Playlist Desconhecida</string>
+    <string name="asc">Asc</string>
+    <string name="desc">Desc</string>
+    <string name="go_to_source_playlist">Ir para a lista de reprodução de origem</string>
+    <string name="edit_tag">Editar Tag</string>
+    <string name="detail">Detalhes</string>
+    <string name="set_as_ringtone">Definir como toque</string>
+    <string name="divider" translatable="false">_devider</string>
+    <string name="remove_from_queue">Remover da fila</string>
+    <string name="repeat_it_again">Repita novamente</string>
+    <string name="add_playlist_to_playlist">Adicionar todas as músicas a outra playlist</string>
+    <string name="rename">Renomear</string>
+    <string name="delete">Deletar</string>
+    <string name="deleted_x_songs">Deletado %1$d musicas.</string>
+    <string name="delete_song_x"><![CDATA[Excluir a música <b>%1$s</b>?]]></string>
+    <string name="delete_x_songs"><![CDATA[Deletar <b>%1$d</b> musicas?]]></string>
+    <string name="remove_song_x_from_playlist"><![CDATA[Remover a música <b>%1$s</b> da playlist?]]></string>
+    <string name="remove_x_songs_from_playlist"><![CDATA[Remover <b>%1$d</b> musicas da playlist?]]></string>
+    <string name="delete_song_title">Deletar musica</string>
+    <string name="delete_songs_title">Deletar musicas</string>
+    <string name="remove_song_from_playlist_title">Remover musicas da playlist</string>
+    <string name="remove_songs_from_playlist_title">Remover Musica playlist</string>
+    <string name="delete_action">Deletar</string>
+    <string name="clear_action">Limpar</string>
+    <string name="new_playlist_title">Nova Playlist</string>
+    <string name="create_action">Criar</string>
+    <string name="playlist_name_empty">Nome da Playlist</string>
+    <string name="add_playlist_title">Escolha a playlist para adicionar</string>
+    <string name="action_new_playlist">Criar nova playlist…</string>
+    <string name="play_preview">Reproduzir visualização</string>
+    <string name="see_more_about">Veja mais sobre</string>
+    <string name="rename_playlist_title">Renomear playlist</string>
+    <string name="delete_playlist_title">Deletar playlist</string>
+    <string name="delete_playlists_title">Deletar playlists</string>
+    <string name="clear_playlist_title">Limpar playlist</string>
+    <string name="save_playlist_title">Savar como arquivo</string>
+    <string name="save_playlists_title">Savar como arquivos</string>
+    <string name="english">Portugues</string>
+    <string name="viet_nam" translatable="false">Espanhol (Em breve adicionável)</string>
+    <string name="language">Languagem</string>
+    <string name="specific_playlist">Playlist especifica</string>
+    <string name="create">Criar uma agora</string>
+    <string name="customization">Customização</string>
+    <string name="artist_image_background">Usar a arte do Artista de fundo</string>
+    <string name="show_lyric">Mostrar lyric</string>
+    <string name="in_app_volume">Volume in-app</string>
+    <string name="specific_playlist_note">Playlists com músicas não aparecem em nenhuma outra playlists, incluindo lista de reprodução Todas as músicas. Crie algo como Blacklist, Estudo sobre Ingles, etc.</string>
+    <string name="change_languague_note">Exija uma reinicialização rápida para afetar a alteração, a música não será interrompida.</string>
+    <string name="more_setting">Mais opções</string>
+    <string name="back_description">Voltar para a tela anterior</string>
+    <string name="left_right_audio_balance">Balanço de áudio esquerdo direito</string>
+    <string name="play_preview_all">Reproduzir visualizar todos</string>
+    <string name="str_number_placeholder">%1$d</string>
+    <string name="str_stop_play_preview">Parar a visualização de reprodução</string>
+    <string name="str_error_general">Erro desconhecido, tente novamente mais tarde!</string>
+</resources>
