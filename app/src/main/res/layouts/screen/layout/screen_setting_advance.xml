@@ -56,7 +56,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="24dp"
                 android:layout_marginEnd="16dp"
-                android:text="Eu sou o Ricky dono da HeroRickyStudios aonde eu publico meus apps lá na Google Play Store! Atualmente tenho 20 anos e ainda estou inicando a minha carreira de proramador Android!"
+                android:text="Eu sou o Ricky dono da HeroRickyStudios aonde eu publico meus apps lá na Google Play Store! Atualmente tenho 20 anos e ainda estou iniciando a minha carreira de programador Android!"
                 android:textSize="34sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
