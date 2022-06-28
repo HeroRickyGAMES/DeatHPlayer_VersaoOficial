@@ -235,8 +235,8 @@
 
     <com.ldt.musicr.ui.widget.avsb.AudioVisualSeekBar
         android:id="@+id/visual_seek_bar"
-        android:layout_width="0dp"
-        android:layout_height="120dp"
+        android:layout_width="410dp"
+        android:layout_height="58dp"
         app:layout_constraintBottom_toBottomOf="@id/bottom_gradient"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

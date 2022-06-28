@@ -25,8 +25,10 @@ import android.util.Log;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.FrameLayout;
+import android.widget.Toast;
 
 import com.ldt.musicr.App;
 import com.ldt.musicr.R;
@@ -38,11 +40,24 @@ import com.ldt.musicr.ui.nowplaying.NowPlayingLayerFragment;
 import com.ldt.musicr.ui.playingqueue.PlayingQueueLayerFragment;
 import com.ldt.musicr.ui.maintab.BackStackController;
 import com.ldt.musicr.util.NavigationUtil;
+import com.unity3d.ads.IUnityAdsInitializationListener;
+import com.unity3d.ads.IUnityAdsLoadListener;
+import com.unity3d.ads.IUnityAdsShowListener;
+import com.unity3d.ads.UnityAds;
+import com.unity3d.services.banners.IUnityBannerListener;
+import com.unity3d.services.banners.UnityBanners;
 
 
 public class AppActivity extends MusicServiceActivity {
     private static final String TAG = "AppActivity";
     private static final int CODE_PERMISSIONS_WRITE_STORAGE = 1;
+
+    private String GameID = "4817969";
+    private String interAD = "Interstitial_Android";
+    private String bannerPlacement = "Banner_Android";
+    private String interPlacement = "Interstitial_Android";
+    private String rewardedPlacement="Rewarded_Android";
+    private boolean testMode = true;
 
     public ConstraintLayout mAppRootView;
 
@@ -132,6 +147,118 @@ public class AppActivity extends MusicServiceActivity {
         if (mUseDynamicTheme) {
             setTheme(R.style.AppThemeNoWallpaper);
         }
+
+        //UnityAdsInicio
+        UnityAds.initialize(this, GameID, testMode);
+
+        IUnityAdsInitializationListener initializationListener = new IUnityAdsInitializationListener() {
+            @Override
+            public void onInitializationComplete() {
+          if(testMode == true){
+              Toast.makeText(AppActivity.this, "Iniciou!", Toast.LENGTH_SHORT).show();
+                }
+            }
+
+            @Override
+            public void onInitializationFailed(UnityAds.UnityAdsInitializationError unityAdsInitializationError, String s) {
+                Toast.makeText(AppActivity.this, "Ocorreu um erro!", Toast.LENGTH_SHORT).show();
+            }
+        };
+
+        UnityAds.initialize(this, GameID, testMode, initializationListener);
+
+        IUnityAdsShowListener unityAdsShowListener = new IUnityAdsShowListener() {
+            @Override
+            public void onUnityAdsShowFailure(String s, UnityAds.UnityAdsShowError unityAdsShowError, String s1) {
+
+                Toast.makeText(AppActivity.this, "Ocorreu um erro!", Toast.LENGTH_SHORT).show();
+
+            }
+
+            @Override
+            public void onUnityAdsShowStart(String s) {
+
+                if(testMode == true){
+                    Toast.makeText(AppActivity.this, "Start!", Toast.LENGTH_SHORT).show();
+                }
+
+            }
+
+            @Override
+            public void onUnityAdsShowClick(String s) {
+
+            }
+
+            @Override
+            public void onUnityAdsShowComplete(String s, UnityAds.UnityAdsShowCompletionState unityAdsShowCompletionState) {
+
+                if(testMode == true){
+                    Toast.makeText(AppActivity.this, "Completo!", Toast.LENGTH_SHORT).show();
+                }
+
+            }
+        };
+
+        IUnityBannerListener bannerListener = new IUnityBannerListener() {
+            @Override
+            public void onUnityBannerLoaded(String s, View view) {
+                ((ViewGroup) findViewById(R.id.banner_ad)).removeView(view);
+                ((ViewGroup) findViewById(R.id.banner_ad)).addView(view);
+            }
+
+            @Override
+            public void onUnityBannerUnloaded(String s) {
+                if(testMode == true){
+                    Toast.makeText(AppActivity.this, "Não carregou!", Toast.LENGTH_SHORT).show();
+                }
+            }
+
+            @Override
+            public void onUnityBannerShow(String s) {
+                if(testMode == true){
+                    Toast.makeText(AppActivity.this, "Apareceu o banner", Toast.LENGTH_SHORT).show();
+                }
+            }
+
+            @Override
+            public void onUnityBannerClick(String s) {
+
+            }
+
+            @Override
+            public void onUnityBannerHide(String s) {
+                Toast.makeText(AppActivity.this, "Está escondido!", Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onUnityBannerError(String s) {
+                if(testMode == true){
+                    Toast.makeText(AppActivity.this, "Ocorreu um erro...", Toast.LENGTH_SHORT).show();
+                }
+            }
+        };
+
+        UnityBanners.setBannerListener(bannerListener);
+
+        IUnityAdsLoadListener adsLoadListener = new IUnityAdsLoadListener() {
+            @Override
+            public void onUnityAdsAdLoaded(String s) {
+                if(testMode == true) {
+                    Toast.makeText(AppActivity.this, "Iniciado!", Toast.LENGTH_SHORT).show();
+                }
+
+                UnityAds.show(AppActivity.this, interPlacement, unityAdsShowListener);
+
+                UnityBanners.loadBanner(AppActivity.this, bannerPlacement);
+            }
+
+            @Override
+            public void onUnityAdsFailedToLoad(String s, UnityAds.UnityAdsLoadError unityAdsLoadError, String s1) {
+
+            }
+        };
+
+        UnityAds.load(rewardedPlacement, adsLoadListener);
 
         App.getInstance().getPreferencesUtility().notFirstTime();
         WindowThemingKt.setUpDarkSystemUIVisibility(this.getWindow());

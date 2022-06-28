@@ -10,8 +10,8 @@ android {
         applicationId "com.herorickyStudios.deatcHplayer"
         minSdkVersion 21
         targetSdkVersion 30
-        versionCode 6
-        versionName '2.1.1'
+        versionCode 7
+        versionName '2.3'
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         renderscriptTargetApi 29
         renderscriptSupportModeEnabled true
@@ -86,6 +86,10 @@ dependencies {
     androidTestImplementation('androidx.test.espresso:espresso-core:3.1.0', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
+
+
+    //impementação do UnityADS
+    implementation files('../libs/unity-ads.aar')
 
     // App Compat
     implementation 'androidx.appcompat:appcompat:1.2.0'
