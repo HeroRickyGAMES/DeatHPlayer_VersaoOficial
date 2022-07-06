@@ -123,11 +123,18 @@ public class CustomArtistImageUtil {
     }
 
     private static String getFileName(Artist artist) {
-        String artistName = artist.getName();
-        if (artistName == null)
-            artistName = "";
-        // replace everything that is not a letter or a number with _
-        artistName = artistName.replaceAll("[^a-zA-Z0-9]", "_");
+        String artistName = artist.getName().replace("& ", "");
+
+        if (artist.getName() == null)
+
+            artistName = "Desconhecido";
+            // replace everything that is not a letter or a number with _
+            //artistName = artistName.replaceAll("[-\\[\\]^/,'*:.!><~@#$%+=?&|\"\\\\()]+", "");
+            //artistName = artistName.replaceAll("&", " ");
+
+        System.out.println(artist.getName());
+
+
         return String.format(Locale.US, "#%d#%s.jpeg", artist.getId(), artistName);
     }
 

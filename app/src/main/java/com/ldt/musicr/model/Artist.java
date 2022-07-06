@@ -2,6 +2,8 @@ package com.ldt.musicr.model;
 
 import android.os.Parcel;
 import android.os.Parcelable;
+import android.widget.Toast;
+
 import androidx.annotation.NonNull;
 
 import com.ldt.musicr.util.MusicUtil;
@@ -29,6 +31,8 @@ public class Artist extends Media implements Parcelable {
 
     public String getName() {
         String name = safeGetFirstAlbum().getArtistName();
+        System.out.println(name);
+
         if (MusicUtil.isArtistNameUnknown(name)) {
             return UNKNOWN_ARTIST_DISPLAY_NAME;
         }

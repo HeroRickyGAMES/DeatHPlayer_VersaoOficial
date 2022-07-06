@@ -360,9 +360,10 @@ public class SongLoader {
         final int albumId = cursor.getInt(7);
         final String albumName = cursor.getString(8);
         final int artistId = cursor.getInt(9);
-        final String artistName = cursor.getString(10);
+        final String artistName = cursor.getString(10).replace("& ", "");
 
-        return new Song(id, title, trackNumber, year, duration, data, dateModified, albumId, albumName, artistId, artistName);
+        String art = artistName;
+        return new Song(id, title, trackNumber, year, duration, data, dateModified, albumId, albumName, artistId, art);
     }
 
     @Nullable

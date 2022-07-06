@@ -134,7 +134,7 @@ public class MusicUtil {
         int songCount = album.getSongCount();
 
         return MusicUtil.buildInfoString(
-            album.getArtistName(),
+            album.getArtistName().replaceAll("& ", ""),
             MusicUtil.getSongCountString(context, songCount)
         );
     }
@@ -359,6 +359,10 @@ public class MusicUtil {
     public static boolean isArtistNameUnknown(@Nullable String artistString) {
         String artistName = artistString;
         if (TextUtils.isEmpty(artistName)) return false;
+        if(artistName.equals(null)){
+            artistName = artistName.trim().toLowerCase();
+            return artistName.equals("unknown") || artistName.equals("<unknown>");
+        };
         if (artistName.equals(Artist.UNKNOWN_ARTIST_DISPLAY_NAME)) return true;
         artistName = artistName.trim().toLowerCase();
         return artistName.equals("unknown") || artistName.equals("<unknown>");

@@ -57,7 +57,7 @@ public class AppActivity extends MusicServiceActivity {
     private String bannerPlacement = "Banner_Android";
     private String interPlacement = "Interstitial_Android";
     private String rewardedPlacement="Rewarded_Android";
-    private boolean testMode = true;
+    private boolean testMode = false;
 
     public ConstraintLayout mAppRootView;
 
