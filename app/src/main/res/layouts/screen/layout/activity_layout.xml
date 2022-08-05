@@ -62,7 +62,7 @@
     </FrameLayout>
 
     <LinearLayout
-        android:id="@+id/banner_ad"
+        android:id="@+id/banner_container"
         android:layout_width="match_parent"
         android:layout_height="59dp"
         android:layout_alignParentBottom="true"
