@@ -161,7 +161,7 @@ public class AppActivity extends MusicServiceActivity {
 
 
         //Facebook ADS Inter ad
-        interstitialAd = new InterstitialAd(this, "326901805789557_561568765656192");
+        interstitialAd = new InterstitialAd(this, "1200622114112905_1200622200779563");
 
         InterstitialAdListener interstitialAdListener = new InterstitialAdListener() {
             @Override
@@ -238,7 +238,7 @@ public class AppActivity extends MusicServiceActivity {
             }
         };
 
-        adView = new AdView(this, "326901805789557_561404239005978", AdSize.BANNER_HEIGHT_50);
+        adView = new AdView(this, "1200622114112905_1200622197446230", AdSize.BANNER_HEIGHT_50);
 
         // Find the Ad Container
         LinearLayout adContainer = (LinearLayout) findViewById(R.id.banner_container);
