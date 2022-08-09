@@ -10,8 +10,8 @@ android {
         applicationId "com.herorickyStudios.deatcHplayer"
         minSdkVersion 21
         targetSdkVersion 30
-        versionCode 10
-        versionName '3.0'
+        versionCode 11
+        versionName '3.1b'
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         renderscriptTargetApi 29
         renderscriptSupportModeEnabled true
@@ -88,6 +88,7 @@ dependencies {
     })
 
     //Facebook ADS
+    implementation 'androidx.annotation:annotation:1.0.0'
     implementation 'com.facebook.android:audience-network-sdk:6.+'
 
     // App Compat

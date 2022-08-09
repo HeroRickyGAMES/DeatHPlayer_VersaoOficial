@@ -158,6 +158,8 @@ public class AppActivity extends MusicServiceActivity {
         AudienceNetworkAds.initialize(this);
 
 
+
+
         //Facebook ADS Inter ad
         interstitialAd = new InterstitialAd(this, "326901805789557_561568765656192");
 
@@ -167,7 +169,6 @@ public class AppActivity extends MusicServiceActivity {
                 // Interstitial ad displayed callback
                 Log.e(TAG, "Interstitial ad displayed.");
             }
-
             @Override
             public void onInterstitialDismissed(Ad ad) {
                 // Interstitial dismissed callback
@@ -212,11 +213,13 @@ public class AppActivity extends MusicServiceActivity {
         AdListener adListener = new AdListener() {
             @Override
             public void onError(Ad ad, AdError adError) {
-                Toast.makeText(
-                                AppActivity.this,
-                                "Error: " + adError.getErrorMessage(),
-                                Toast.LENGTH_LONG)
-                        .show();
+                if(testMode == true){
+                    Toast.makeText(
+                                    AppActivity.this,
+                                    "Error: " + adError.getErrorMessage(),
+                                    Toast.LENGTH_LONG)
+                            .show();
+                }
             }
 
             @Override
@@ -235,7 +238,7 @@ public class AppActivity extends MusicServiceActivity {
             }
         };
 
-        adView = new AdView(this, "IMG_16_9_APP_INSTALL#326901805789557_561404239005978", AdSize.BANNER_HEIGHT_50);
+        adView = new AdView(this, "326901805789557_561404239005978", AdSize.BANNER_HEIGHT_50);
 
         // Find the Ad Container
         LinearLayout adContainer = (LinearLayout) findViewById(R.id.banner_container);
